@@ -24,7 +24,7 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect("mongodb+srv://admin-adam:HookFarm08@cluster0.ph1xq.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://YOUR ADMIN ACCOUNT GOES HERE", {useNewUrlParser: true});
 
 
 const postSchema = {
@@ -101,7 +101,7 @@ app.post("/", function(req, res) {
   };
 
   var jsonData = JSON.stringify(data);
-  const url = "https://us20.api.mailchimp.com/3.0/lists/6743f5b7ea";
+  const url = "https://MAILCHIMP API";
 
   const options = {
     method: "POST",
