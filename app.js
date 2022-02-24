@@ -101,11 +101,11 @@ app.post("/", function(req, res) {
   };
 
   var jsonData = JSON.stringify(data);
-  const url = "https://MAILCHIMP API";
+  const url = "https://MAILCHIMP ID";
 
   const options = {
     method: "POST",
-    auth: "adam1:814ba24b87a060ec2f88c4a116809ab1-us20"
+    auth: "MAILCHIMP API KEY"
   }
 
   const request = https.request(url, options, function(response) {
